@@ -1,0 +1,11 @@
+<form ng-form="form" (submit)="submit(form)">
+  <div class="form-group">
+
+    <input type="hidden" name="id" [(ngModel)]="http.vaccinationTypeInstance.id" />
+    <label for="name" class="control-label">
+      name
+    </label>
+    <input type="text" name="Name" [(ngModel)]="http.vaccinationTypeInstance.name" class="form-control" />
+  </div>
+  <input type="submit" value="Save" class="btn-primary btn-lg" />
+</form>
